@@ -7,11 +7,13 @@
   "editor.formatOnSave": true,
 
   "python.languageServer": "Pylance",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.typeCheckingMode": "strict",
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "black-formatter.args": ["--line-length", "80"],
@@ -25,7 +27,7 @@
 
   "notebook.formatOnSave.enabled": true,
   "notebook.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
 
   "files.associations": {
@@ -34,6 +36,10 @@
     "CONTRIBUTORS": "plaintext"
   },
 
+  "[makefile]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
+  },
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   }
